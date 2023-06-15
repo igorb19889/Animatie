@@ -1,0 +1,112 @@
+body{
+    background-color: #234;
+
+}
+.preloader2{
+    width: 200px;
+    height: 200px;
+    animation: grow-and-fade 5s infinite linear;
+    
+}
+.preloader2 .lg1{
+    width: 200px;
+    height: 200px;
+    border-radius: 105px;
+    border: 5px solid red;
+    box-sizing: border-box;
+    border-top-color: purple;
+    border-right-color: rgb(10, 233, 55);
+    border-bottom-color: rgb(234, 196, 7);
+    border-left-color: rgb(0, 128, 83);
+    box-shadow: 0px 10px 10px 0px rgb(4, 237, 202);
+    animation: rol 8s infinite linear;
+    
+    
+}
+.preloader2 .sm1{
+    width: 150px;
+    height: 150px;
+    border: 3px solid green;
+    border-radius: 105px;
+    border-top-color: yellow;
+    border-bottom-color: rgb(55, 255, 0);
+    border-right-color: rgb(0, 255, 217);
+    border-left-color: rgb(0, 47, 255);
+    box-sizing: border-box;
+    box-shadow: 0px 10px 10px 0px rgb(255, 0, 43);
+    animation: backwards circle 5s infinite linear;
+}
+.preloader2 .sm2{
+    width: 100px;
+    height: 100px;
+    border: 3px solid green;
+    border-radius: 105px;
+    border-top-color: rgb(0, 255, 153);
+    border-bottom-color: rgb(0, 119, 255);
+    border-right-color: rgb(140, 0, 255);
+    border-left-color: rgb(255, 0, 43);
+    box-sizing: border-box;
+    box-shadow: 0px 10px 10px 0px rgb(38, 9, 225);
+    animation: rol 7s infinite linear;
+}
+.preloader2 .sm3{
+    width: 50px;
+    height: 50px;
+    border: 3px solid green;
+    border-radius: 105px;
+    border-top-color: rgb(255, 77, 0);
+    border-bottom-color: rgb(0, 255, 255);
+    border-right-color: rgb(136, 0, 255);
+    border-left-color: rgb(0, 255, 42);
+    box-sizing: border-box;
+    box-shadow: 0px 10px 10px 0px rgb(68, 255, 0);
+    animation: backwards circle 3s infinite linear;
+}
+.preloader2 .sm4{
+    width: 25px;
+    height: 25px;
+    border: 3px solid green;
+    border-radius: 105px;
+    border-top-color: rgb(255, 77, 0);
+    border-bottom-color: rgb(0, 255, 255);
+    border-right-color: rgb(136, 0, 255);
+    border-left-color: rgb(0, 255, 42);
+    box-sizing: border-box;
+    box-shadow: 0px 10px 10px 0px rgb(0, 132, 255);
+    animation: rol 3s infinite linear;
+}
+@keyframes rol{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+transform: rotate(360deg);
+    }
+}
+@keyframes circle{
+    from{
+transform: rotate(360);
+    }
+    to{
+transform: rotate(-360deg);
+    }
+}
+@keyframes grow-and-fade {
+    0% {
+      opacity: 0;
+      transform: scale(0.5) translatez(0);
+    }
+    
+    40% {
+      opacity: 1;
+    }
+    
+    60% {
+      opacity: 1;
+    }
+    
+    100% {
+      opacity: 0;
+      transform: scale(1) translatez(0);
+    }
+  }
